@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDCE99742AE9E58800478AA4 /* UpFundsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99732AE9E58800478AA4 /* UpFundsApp.swift */; };
+		DDCE99762AE9E58800478AA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99752AE9E58800478AA4 /* ContentView.swift */; };
+		DDCE99782AE9E58900478AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCE99772AE9E58900478AA4 /* Assets.xcassets */; };
+		DDCE997B2AE9E58900478AA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCE997A2AE9E58900478AA4 /* Preview Assets.xcassets */; };
+		DDCE99852AE9E58900478AA4 /* UpFundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99842AE9E58900478AA4 /* UpFundsTests.swift */; };
+		DDCE998F2AE9E58900478AA4 /* UpFundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE998E2AE9E58900478AA4 /* UpFundsUITests.swift */; };
+		DDCE99912AE9E58900478AA4 /* UpFundsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99902AE9E58900478AA4 /* UpFundsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDCE99812AE9E58900478AA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDCE99682AE9E58800478AA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDCE996F2AE9E58800478AA4;
+			remoteInfo = UpFunds;
+		};
+		DDCE998B2AE9E58900478AA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDCE99682AE9E58800478AA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDCE996F2AE9E58800478AA4;
+			remoteInfo = UpFunds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDCE99702AE9E58800478AA4 /* UpFunds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpFunds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCE99732AE9E58800478AA4 /* UpFundsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpFundsApp.swift; sourceTree = "<group>"; };
+		DDCE99752AE9E58800478AA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DDCE99772AE9E58900478AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDCE997A2AE9E58900478AA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDCE99802AE9E58900478AA4 /* UpFundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpFundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCE99842AE9E58900478AA4 /* UpFundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpFundsTests.swift; sourceTree = "<group>"; };
+		DDCE998A2AE9E58900478AA4 /* UpFundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpFundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCE998E2AE9E58900478AA4 /* UpFundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpFundsUITests.swift; sourceTree = "<group>"; };
+		DDCE99902AE9E58900478AA4 /* UpFundsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpFundsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDCE996D2AE9E58800478AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCE997D2AE9E58900478AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCE99872AE9E58900478AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDCE99672AE9E58800478AA4 = {
+			isa = PBXGroup;
+			children = (
+				DDCE99722AE9E58800478AA4 /* UpFunds */,
+				DDCE99832AE9E58900478AA4 /* UpFundsTests */,
+				DDCE998D2AE9E58900478AA4 /* UpFundsUITests */,
+				DDCE99712AE9E58800478AA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDCE99712AE9E58800478AA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDCE99702AE9E58800478AA4 /* UpFunds.app */,
+				DDCE99802AE9E58900478AA4 /* UpFundsTests.xctest */,
+				DDCE998A2AE9E58900478AA4 /* UpFundsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDCE99722AE9E58800478AA4 /* UpFunds */ = {
+			isa = PBXGroup;
+			children = (
+				DDCE99732AE9E58800478AA4 /* UpFundsApp.swift */,
+				DDCE99752AE9E58800478AA4 /* ContentView.swift */,
+				DDCE99772AE9E58900478AA4 /* Assets.xcassets */,
+				DDCE99792AE9E58900478AA4 /* Preview Content */,
+			);
+			path = UpFunds;
+			sourceTree = "<group>";
+		};
+		DDCE99792AE9E58900478AA4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DDCE997A2AE9E58900478AA4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDCE99832AE9E58900478AA4 /* UpFundsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDCE99842AE9E58900478AA4 /* UpFundsTests.swift */,
+			);
+			path = UpFundsTests;
+			sourceTree = "<group>";
+		};
+		DDCE998D2AE9E58900478AA4 /* UpFundsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDCE998E2AE9E58900478AA4 /* UpFundsUITests.swift */,
+				DDCE99902AE9E58900478AA4 /* UpFundsUITestsLaunchTests.swift */,
+			);
+			path = UpFundsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDCE996F2AE9E58800478AA4 /* UpFunds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDCE99942AE9E58900478AA4 /* Build configuration list for PBXNativeTarget "UpFunds" */;
+			buildPhases = (
+				DDCE996C2AE9E58800478AA4 /* Sources */,
+				DDCE996D2AE9E58800478AA4 /* Frameworks */,
+				DDCE996E2AE9E58800478AA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UpFunds;
+			productName = UpFunds;
+			productReference = DDCE99702AE9E58800478AA4 /* UpFunds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDCE997F2AE9E58900478AA4 /* UpFundsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDCE99972AE9E58900478AA4 /* Build configuration list for PBXNativeTarget "UpFundsTests" */;
+			buildPhases = (
+				DDCE997C2AE9E58900478AA4 /* Sources */,
+				DDCE997D2AE9E58900478AA4 /* Frameworks */,
+				DDCE997E2AE9E58900478AA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDCE99822AE9E58900478AA4 /* PBXTargetDependency */,
+			);
+			name = UpFundsTests;
+			productName = UpFundsTests;
+			productReference = DDCE99802AE9E58900478AA4 /* UpFundsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDCE99892AE9E58900478AA4 /* UpFundsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDCE999A2AE9E58900478AA4 /* Build configuration list for PBXNativeTarget "UpFundsUITests" */;
+			buildPhases = (
+				DDCE99862AE9E58900478AA4 /* Sources */,
+				DDCE99872AE9E58900478AA4 /* Frameworks */,
+				DDCE99882AE9E58900478AA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDCE998C2AE9E58900478AA4 /* PBXTargetDependency */,
+			);
+			name = UpFundsUITests;
+			productName = UpFundsUITests;
+			productReference = DDCE998A2AE9E58900478AA4 /* UpFundsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDCE99682AE9E58800478AA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DDCE996F2AE9E58800478AA4 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					DDCE997F2AE9E58900478AA4 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DDCE996F2AE9E58800478AA4;
+					};
+					DDCE99892AE9E58900478AA4 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DDCE996F2AE9E58800478AA4;
+					};
+				};
+			};
+			buildConfigurationList = DDCE996B2AE9E58800478AA4 /* Build configuration list for PBXProject "UpFunds" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDCE99672AE9E58800478AA4;
+			productRefGroup = DDCE99712AE9E58800478AA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDCE996F2AE9E58800478AA4 /* UpFunds */,
+				DDCE997F2AE9E58900478AA4 /* UpFundsTests */,
+				DDCE99892AE9E58900478AA4 /* UpFundsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDCE996E2AE9E58800478AA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCE997B2AE9E58900478AA4 /* Preview Assets.xcassets in Resources */,
+				DDCE99782AE9E58900478AA4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCE997E2AE9E58900478AA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCE99882AE9E58900478AA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDCE996C2AE9E58800478AA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCE99762AE9E58800478AA4 /* ContentView.swift in Sources */,
+				DDCE99742AE9E58800478AA4 /* UpFundsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCE997C2AE9E58900478AA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCE99852AE9E58900478AA4 /* UpFundsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCE99862AE9E58900478AA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCE99912AE9E58900478AA4 /* UpFundsUITestsLaunchTests.swift in Sources */,
+				DDCE998F2AE9E58900478AA4 /* UpFundsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDCE99822AE9E58900478AA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDCE996F2AE9E58800478AA4 /* UpFunds */;
+			targetProxy = DDCE99812AE9E58900478AA4 /* PBXContainerItemProxy */;
+		};
+		DDCE998C2AE9E58900478AA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDCE996F2AE9E58800478AA4 /* UpFunds */;
+			targetProxy = DDCE998B2AE9E58900478AA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DDCE99922AE9E58900478AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDCE99932AE9E58900478AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDCE99952AE9E58900478AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UpFunds/Preview Content\"";
+				DEVELOPMENT_TEAM = U7VLQ68D5P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kundo.UpFunds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDCE99962AE9E58900478AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UpFunds/Preview Content\"";
+				DEVELOPMENT_TEAM = U7VLQ68D5P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kundo.UpFunds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDCE99982AE9E58900478AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U7VLQ68D5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kundo.UpFundsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UpFunds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UpFunds";
+			};
+			name = Debug;
+		};
+		DDCE99992AE9E58900478AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U7VLQ68D5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kundo.UpFundsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UpFunds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UpFunds";
+			};
+			name = Release;
+		};
+		DDCE999B2AE9E58900478AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U7VLQ68D5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kundo.UpFundsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UpFunds;
+			};
+			name = Debug;
+		};
+		DDCE999C2AE9E58900478AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U7VLQ68D5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kundo.UpFundsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UpFunds;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDCE996B2AE9E58800478AA4 /* Build configuration list for PBXProject "UpFunds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCE99922AE9E58900478AA4 /* Debug */,
+				DDCE99932AE9E58900478AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDCE99942AE9E58900478AA4 /* Build configuration list for PBXNativeTarget "UpFunds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCE99952AE9E58900478AA4 /* Debug */,
+				DDCE99962AE9E58900478AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDCE99972AE9E58900478AA4 /* Build configuration list for PBXNativeTarget "UpFundsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCE99982AE9E58900478AA4 /* Debug */,
+				DDCE99992AE9E58900478AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDCE999A2AE9E58900478AA4 /* Build configuration list for PBXNativeTarget "UpFundsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCE999B2AE9E58900478AA4 /* Debug */,
+				DDCE999C2AE9E58900478AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDCE99682AE9E58800478AA4 /* Project object */;
+}
