@@ -1,5 +1,5 @@
 //
-//  ExpenseList.swift
+//  ExpensesList.swift
 //  UpFunds
 //
 //  Created by Kundo on 25/10/23.
@@ -7,12 +7,47 @@
 
 import SwiftUI
 
-struct ExpenseList: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+struct ExpensesList: View {
+    @Bindable var expense: Expense
+    var displayTag: Bool = true
+    
 
-#Preview {
-    ExpenseList()
-}
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading) {  // probar con lazyvstack
+                Text(expense.note)
+                    .foregroundStyle(.white)
+                HStack {
+                
+                if let walletName = expense.wallet?.walletName, displayTag {
+                    Text(walletName)
+                        .font(.caption2)
+                        .foregroundStyle(.red)
+                        .padding(.horizontal, 5)
+                        .padding(.vertical, 4)
+                        .background(.red.opacity(0.4), in : .capsule)
+                    
+                }
+                
+                if let category = expense.category?.categoryName, displayTag {
+                    Text(category)
+                        .font(.caption2)
+                        .foregroundStyle(.blue)
+                        .padding(.horizontal, 5)
+                        .padding(.vertical, 4)
+                        .background(.blue.opacity(0.4), in : .capsule)
+                    }
+                }
+            }
+            .lineLimit(1)
+            
+            Spacer(minLength: 6)
+            
+            Text(expense.currencyString)
+                .font(.title3.bold())
+                .padding(.bottom, 4)
+
+            }
+        }
+    }
+

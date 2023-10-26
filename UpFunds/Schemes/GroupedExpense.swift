@@ -6,13 +6,25 @@
 //
 
 import SwiftUI
+import SwiftData
 
-struct GroupedExpense: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+struct GroupedExpense: Identifiable {
+    var id: UUID = .init()
+    var date: Date
+    var expenses: [Expense]
+    
+    
+    var groupTitle: String {
+        let calendar = Calendar.current
+        
+        if calendar.isDateInToday(date) {
+                return "Today"
+        } else if calendar.isDateInYesterday(date) {
+                return "Yesterday"
+        } else {
+            return date.formatted(date: .abbreviated, time: .omitted)
+        }
     }
 }
 
-#Preview {
-    GroupedExpense()
-}

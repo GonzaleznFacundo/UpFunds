@@ -14,6 +14,21 @@
 		DDCE99852AE9E58900478AA4 /* UpFundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99842AE9E58900478AA4 /* UpFundsTests.swift */; };
 		DDCE998F2AE9E58900478AA4 /* UpFundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE998E2AE9E58900478AA4 /* UpFundsUITests.swift */; };
 		DDCE99912AE9E58900478AA4 /* UpFundsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99902AE9E58900478AA4 /* UpFundsUITestsLaunchTests.swift */; };
+		DDCE999E2AE9E5E500478AA4 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE999D2AE9E5E500478AA4 /* ExpensesView.swift */; };
+		DDCE99A02AE9E5F000478AA4 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE999F2AE9E5F000478AA4 /* WalletView.swift */; };
+		DDCE99A22AE9E60D00478AA4 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99A12AE9E60D00478AA4 /* CategoryView.swift */; };
+		DDCE99A42AE9E61400478AA4 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99A32AE9E61400478AA4 /* AddView.swift */; };
+		DDCE99A72AE9E69C00478AA4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99A62AE9E69C00478AA4 /* SettingsView.swift */; };
+		DDCE99AA2AE9E77800478AA4 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99A92AE9E77800478AA4 /* Wallet.swift */; };
+		DDCE99AC2AE9E77F00478AA4 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99AB2AE9E77F00478AA4 /* Category.swift */; };
+		DDCE99AE2AE9E78400478AA4 /* Recurrence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99AD2AE9E78400478AA4 /* Recurrence.swift */; };
+		DDCE99B02AE9E78E00478AA4 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99AF2AE9E78E00478AA4 /* Expense.swift */; };
+		DDCE99B42AE9E81900478AA4 /* KeyboardUtill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99B32AE9E81900478AA4 /* KeyboardUtill.swift */; };
+		DDCE99B62AE9E85600478AA4 /* TotalExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99B52AE9E85600478AA4 /* TotalExpenseList.swift */; };
+		DDCE99B82AE9E86000478AA4 /* TotalWalletList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99B72AE9E86000478AA4 /* TotalWalletList.swift */; };
+		DDCE99BA2AE9E8E000478AA4 /* TotalCategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99B92AE9E8E000478AA4 /* TotalCategoryList.swift */; };
+		DDCE99BC2AE9E8F700478AA4 /* ExpensesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99BB2AE9E8F700478AA4 /* ExpensesList.swift */; };
+		DDCE99BE2AE9E91600478AA4 /* GroupedExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE99BD2AE9E91600478AA4 /* GroupedExpense.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +59,21 @@
 		DDCE998A2AE9E58900478AA4 /* UpFundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpFundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCE998E2AE9E58900478AA4 /* UpFundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpFundsUITests.swift; sourceTree = "<group>"; };
 		DDCE99902AE9E58900478AA4 /* UpFundsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpFundsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDCE999D2AE9E5E500478AA4 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		DDCE999F2AE9E5F000478AA4 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		DDCE99A12AE9E60D00478AA4 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		DDCE99A32AE9E61400478AA4 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		DDCE99A62AE9E69C00478AA4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DDCE99A92AE9E77800478AA4 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		DDCE99AB2AE9E77F00478AA4 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DDCE99AD2AE9E78400478AA4 /* Recurrence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recurrence.swift; sourceTree = "<group>"; };
+		DDCE99AF2AE9E78E00478AA4 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		DDCE99B32AE9E81900478AA4 /* KeyboardUtill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtill.swift; sourceTree = "<group>"; };
+		DDCE99B52AE9E85600478AA4 /* TotalExpenseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalExpenseList.swift; sourceTree = "<group>"; };
+		DDCE99B72AE9E86000478AA4 /* TotalWalletList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalWalletList.swift; sourceTree = "<group>"; };
+		DDCE99B92AE9E8E000478AA4 /* TotalCategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCategoryList.swift; sourceTree = "<group>"; };
+		DDCE99BB2AE9E8F700478AA4 /* ExpensesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesList.swift; sourceTree = "<group>"; };
+		DDCE99BD2AE9E91600478AA4 /* GroupedExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedExpense.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +127,10 @@
 				DDCE99732AE9E58800478AA4 /* UpFundsApp.swift */,
 				DDCE99752AE9E58800478AA4 /* ContentView.swift */,
 				DDCE99772AE9E58900478AA4 /* Assets.xcassets */,
+				DDCE99B22AE9E80000478AA4 /* Schemes */,
+				DDCE99B12AE9E7F400478AA4 /* Functionalities */,
+				DDCE99A82AE9E75700478AA4 /* Models */,
+				DDCE99A52AE9E61E00478AA4 /* Views */,
 				DDCE99792AE9E58900478AA4 /* Preview Content */,
 			);
 			path = UpFunds;
@@ -125,6 +159,49 @@
 				DDCE99902AE9E58900478AA4 /* UpFundsUITestsLaunchTests.swift */,
 			);
 			path = UpFundsUITests;
+			sourceTree = "<group>";
+		};
+		DDCE99A52AE9E61E00478AA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDCE99A32AE9E61400478AA4 /* AddView.swift */,
+				DDCE99A12AE9E60D00478AA4 /* CategoryView.swift */,
+				DDCE999F2AE9E5F000478AA4 /* WalletView.swift */,
+				DDCE999D2AE9E5E500478AA4 /* ExpensesView.swift */,
+				DDCE99A62AE9E69C00478AA4 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDCE99A82AE9E75700478AA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDCE99A92AE9E77800478AA4 /* Wallet.swift */,
+				DDCE99AB2AE9E77F00478AA4 /* Category.swift */,
+				DDCE99AD2AE9E78400478AA4 /* Recurrence.swift */,
+				DDCE99AF2AE9E78E00478AA4 /* Expense.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDCE99B12AE9E7F400478AA4 /* Functionalities */ = {
+			isa = PBXGroup;
+			children = (
+				DDCE99B32AE9E81900478AA4 /* KeyboardUtill.swift */,
+			);
+			path = Functionalities;
+			sourceTree = "<group>";
+		};
+		DDCE99B22AE9E80000478AA4 /* Schemes */ = {
+			isa = PBXGroup;
+			children = (
+				DDCE99B52AE9E85600478AA4 /* TotalExpenseList.swift */,
+				DDCE99B72AE9E86000478AA4 /* TotalWalletList.swift */,
+				DDCE99B92AE9E8E000478AA4 /* TotalCategoryList.swift */,
+				DDCE99BD2AE9E91600478AA4 /* GroupedExpense.swift */,
+				DDCE99BB2AE9E8F700478AA4 /* ExpensesList.swift */,
+			);
+			path = Schemes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +334,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCE99BC2AE9E8F700478AA4 /* ExpensesList.swift in Sources */,
+				DDCE99B02AE9E78E00478AA4 /* Expense.swift in Sources */,
+				DDCE99BE2AE9E91600478AA4 /* GroupedExpense.swift in Sources */,
+				DDCE99AA2AE9E77800478AA4 /* Wallet.swift in Sources */,
+				DDCE99AE2AE9E78400478AA4 /* Recurrence.swift in Sources */,
+				DDCE99B82AE9E86000478AA4 /* TotalWalletList.swift in Sources */,
+				DDCE99A72AE9E69C00478AA4 /* SettingsView.swift in Sources */,
+				DDCE99B42AE9E81900478AA4 /* KeyboardUtill.swift in Sources */,
+				DDCE99BA2AE9E8E000478AA4 /* TotalCategoryList.swift in Sources */,
 				DDCE99762AE9E58800478AA4 /* ContentView.swift in Sources */,
+				DDCE999E2AE9E5E500478AA4 /* ExpensesView.swift in Sources */,
+				DDCE99A42AE9E61400478AA4 /* AddView.swift in Sources */,
+				DDCE99B62AE9E85600478AA4 /* TotalExpenseList.swift in Sources */,
+				DDCE99AC2AE9E77F00478AA4 /* Category.swift in Sources */,
 				DDCE99742AE9E58800478AA4 /* UpFundsApp.swift in Sources */,
+				DDCE99A02AE9E5F000478AA4 /* WalletView.swift in Sources */,
+				DDCE99A22AE9E60D00478AA4 /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

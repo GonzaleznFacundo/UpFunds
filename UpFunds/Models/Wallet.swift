@@ -5,4 +5,17 @@
 //  Created by Kundo on 25/10/23.
 //
 
-import Foundation
+import SwiftUI
+import SwiftData
+
+@Model
+class Wallet {
+  //  @Attribute(.unique)
+    var walletName: String
+    
+    var expenses: [Expense]?
+
+    init(walletName: String) {
+        self.walletName = walletName
+    }
+}

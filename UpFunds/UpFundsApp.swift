@@ -13,5 +13,7 @@ struct UpFundsApp: App {
         WindowGroup {
             ContentView()
         }
+        
+        .modelContainer(for: [Expense.self, Category.self, Wallet.self])
     }
 }
