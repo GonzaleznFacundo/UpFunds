@@ -55,7 +55,6 @@ struct AddView: View {
                             }
                     }
                     
-                    if !allWallets.isEmpty {
                         HStack {
                             Image(systemName: "briefcase.fill")
                                 .padding(.horizontal, -3)
@@ -81,9 +80,8 @@ struct AddView: View {
                                 }
                             }
                         }
-                    }
                     
-                    if !allCategories.isEmpty {
+            
                         HStack {
                             Image(systemName: "tag.fill")
                                 .padding(.horizontal, -3)
@@ -109,7 +107,7 @@ struct AddView: View {
                                 }
                             }
                         }
-                    }
+                    
                     
                     HStack {
                         Image(systemName: "calendar")

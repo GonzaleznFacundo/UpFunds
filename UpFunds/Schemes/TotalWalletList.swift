@@ -15,27 +15,7 @@ struct TotalWalletList: View {
 
     var body: some View {
         VStack {
-            // Picker to control month and year
-            HStack {
-                Picker("Select Month", selection: $selectedMonth) {
-                    ForEach(1 ..< 13, id: \.self) { month in
-                        Text("\(monthName(for: month))")
-                            .fixedSize(horizontal: true, vertical: false)
-                            .frame(width: 100)
-                    }
-                }
-
-                Picker("Select Year", selection: $selectedYear) {
-                    ForEach(2022 ..< 2030, id: \.self) { year in
-                        Text("\(year)")
-                    }
-                    .fixedSize(horizontal: true, vertical: false)
-                    .frame(width: 100)
-                }
-            }
-            .padding()
-
-            // Display total amount for all wallets
+             // Display for total amount of wallets
             Text("Total Amount:")
                 .font(.headline)
             Text(formattedTotalAmount(sumExpenses(expenses: expensesForSelectedMonthAndYear())))
@@ -43,7 +23,7 @@ struct TotalWalletList: View {
         }
     }
 
-    func formattedTotalAmount(_ amount: Double) -> String {
+    func formattedTotalAmount(_ amount: Double) -> String {  // Currency Formatter
         let currencyFormatter: NumberFormatter = {
             let formatter = NumberFormatter()
             formatter.numberStyle = .currency
@@ -53,14 +33,14 @@ struct TotalWalletList: View {
         return currencyFormatter.string(from: NSNumber(value: amount)) ?? ""
     }
 
-    func expensesForSelectedMonthAndYear() -> [Expense] {
+    func expensesForSelectedMonthAndYear() -> [Expense] {  // Filter for Expenses Based On Month And Year
         return expenses.filter { expense in
             let calendar = Calendar.current
             let expenseComponents = calendar.dateComponents([.month, .year], from: expense.date)
             return expenseComponents.month == selectedMonth && expenseComponents.year == selectedYear
         }
     }
-
+    
     func monthName(for month: Int) -> String {
         let dateFormatter = DateFormatter()
         return dateFormatter.monthSymbols[month - 1]

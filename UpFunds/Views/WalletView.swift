@@ -4,11 +4,11 @@
 //
 //  Created by Kundo on 25/10/23.
 //
-
 import SwiftUI
 import SwiftData
 
 struct WalletView: View {
+    
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
 
@@ -43,7 +43,7 @@ struct WalletView: View {
                     }
 
                     Picker("Select Year", selection: $selectedYear) {
-                        ForEach(2022 ..< 2030, id: \.self) { year in
+                        ForEach(2022 ..< 2025, id: \.self) { year in
                             Text("\(year)")
                         }
                         .fixedSize(horizontal: true, vertical: false)
@@ -72,6 +72,8 @@ struct WalletView: View {
                                 Text("Total:")
                                     .font(.footnote)
                                     .foregroundColor(.secondary)
+                                    .frame(width: 60, alignment: .leading)
+                                
                                 Text(formattedTotalAmount(sumExpenses(expenses: filteredExpensesForSelectedMonthAndYear(walletExpenses: wallet.expenses ?? []))))
                                     .foregroundColor(.green)
                             }
@@ -126,7 +128,7 @@ struct WalletView: View {
         }
     }
 
-    func formattedTotalAmount(_ amount: Double) -> String {
+    func formattedTotalAmount(_ amount: Double) -> String { // Number formatter
         let currencyFormatter: NumberFormatter = {
             let formatter = NumberFormatter()
             formatter.numberStyle = .currency
@@ -136,7 +138,7 @@ struct WalletView: View {
         return currencyFormatter.string(from: NSNumber(value: amount)) ?? ""
     }
 
-    func filteredExpensesForSelectedMonthAndYear(walletExpenses: [Expense]) -> [Expense] {
+    func filteredExpensesForSelectedMonthAndYear(walletExpenses: [Expense]) -> [Expense] { //
         return walletExpenses.filter { expense in
             let calendar = Calendar.current
             let expenseComponents = calendar.dateComponents([.month, .year], from: expense.date)

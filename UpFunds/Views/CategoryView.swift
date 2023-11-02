@@ -1,9 +1,3 @@
-//
-//  CategoryView.swift
-//  UpFunds
-//
-//  Created by Kundo on 25/10/23.
-//
 
 import SwiftUI
 import SwiftData
@@ -72,6 +66,7 @@ struct CategoriesView: View {
                                 Text("Total:")
                                     .font(.footnote)
                                     .foregroundColor(.secondary)
+                                    .frame(width: 60, alignment: .leading)
                                 
                                 Text(formattedTotalAmount(sumExpenses(expenses: filteredExpensesForSelectedMonthAndYear(categoryExpenses: category.expenses ?? []))))
                                     .foregroundColor(.green)

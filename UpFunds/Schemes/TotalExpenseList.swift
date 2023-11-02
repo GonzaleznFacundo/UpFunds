@@ -23,20 +23,21 @@ struct TotalExpenseList: View {
                         Text("\(monthName(for: month))")
                     }
                 }
-                .frame(width: 135)
-                .padding(.trailing, 90)
+                .frame(width: 250)
+                .padding(.trailing, 80)
                 .padding(.top, 50)
                 
                 Picker("Select Year", selection: $selectedYear) {
-                    ForEach(2022 ..< 2030, id: \.self) { year in
+                    ForEach(2022 ..< 2025, id: \.self) { year in
                         Text("\(year)")
                     }
                 }
                 .frame(width: 90)
-                .padding(.leading, 40)
+                .padding(.trailing, 60)
                 .padding(.top, 50)
             }
             
+            // Total Expenses
             VStack {
                 let filteredExpenses = filterExpenses(by: selectedMonth, year: selectedYear, expenses: expense)
                 let totalAmountForSelectedMonth = sumExpenses(expenses: filteredExpenses)
@@ -67,14 +68,14 @@ struct TotalExpenseList: View {
         .background(Color("Color.Box"))
         .cornerRadius(9)
     }
-
+}
     
-    func monthName(for month: Int) -> String {
+    func monthName(for month: Int) -> String {  // Currency Formatter
         let dateFormatter = DateFormatter()
         return dateFormatter.monthSymbols[month - 1]
     }
 
-    func filterExpenses(by month: Int, year: Int, expenses: [Expense]) -> [Expense] {
+    func filterExpenses(by month: Int, year: Int, expenses: [Expense]) -> [Expense] {  // Filter for Expenses Based On Month And Year
         let filteredExpenses = expenses.filter { expense in
             let calendar = Calendar.current
             let expenseComponents = calendar.dateComponents([.month, .year], from: expense.date)
@@ -88,4 +89,4 @@ struct TotalExpenseList: View {
         let totalAmount = amounts.reduce(0, +)
         return totalAmount
     }
-}
+

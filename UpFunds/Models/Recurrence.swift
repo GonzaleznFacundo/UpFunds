@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 
-enum Recurrence: String, Codable {
+enum Recurrence: String, Codable  {
     case none = "None"
     case daily = "Daily"
     case weekly = "Weekly"

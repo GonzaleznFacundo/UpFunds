@@ -20,77 +20,79 @@ struct ExpensesView: View {
     @State private var expenseToEdit: Expense?
 
     var body: some View {
-        NavigationStack {
-            VStack {
-                if searchText.isEmpty {
-                    TotalExpenseList(expense: allExpenses)
-                }
-                List {
-                    ForEach($groupedExpenses) { $group in
-                        Section(group.groupTitle) {
-                            ForEach(group.expenses) { expense in
-                                ExpensesList(expense: expense)
-                                    .onTapGesture {
-                                        expenseToEdit = expense
-                                    }
+            NavigationStack {
+                VStack {
+                    if searchText.isEmpty {
+                        TotalExpenseList(expense: allExpenses)
+                    }
+                    List {
+                        ForEach($groupedExpenses) { $group in
+                            Section(group.groupTitle) {
+                                ForEach(group.expenses) { expense in
+                                    ExpensesList(expense: expense)
+                                        .onTapGesture { expenseToEdit = expense }
+                                        .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                                            Button {
+                                                context.delete(expense)
+                                                withAnimation {
+                                                    group.expenses.removeAll(where: { $0.id == expense.id })
 
-                                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                                        Button {
-                                            context.delete(expense)
-                                            withAnimation {
-                                                group.expenses.removeAll(where: { $0.id == expense.id })
-
-                                                if group.expenses.isEmpty {
-                                                    groupedExpenses.removeAll(where: { $0.id == group.id })
+                                                    if group.expenses.isEmpty {
+                                                        groupedExpenses.removeAll(where: { $0.id == group.id })
+                                                    }
                                                 }
+                                            } label: {
+                                                Image(systemName: "trash")
                                             }
-                                        } label: {
-                                            Image(systemName: "trash")
+                                            .tint(.red)
                                         }
-                                        .tint(.red)
-                                    }
+                                }
                             }
                         }
                     }
                 }
-            }
-            .navigationTitle("Expenses")
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        addExpense.toggle()
-                    } label: {
-                        Image(systemName: "plus.circle.fill")
-                            .font(.title3)
+                .navigationTitle("Expenses")
+                .toolbar {
+                    ToolbarItem {
+                        Button {
+                            addExpense.toggle()
+                        } label: {
+                            Image(systemName: "plus.circle.fill")
+                                .font(.title3)
+                        }
                     }
                 }
-            }
-            .searchable(text: $searchText, placement: .navigationBarDrawer, prompt: Text("Search"))
-            .overlay {
-                if allExpenses.isEmpty || groupedExpenses.isEmpty {
-                    ContentUnavailableView {
-                        Label("No Expenses", systemImage: "tray.fill")
+                .searchable(text: $searchText, placement: .navigationBarDrawer, prompt: Text("Search"))
+                .overlay {
+                    if allExpenses.isEmpty || groupedExpenses.isEmpty {
+                        ContentUnavailableView {
+                            Label("No Expenses", systemImage: "tray.fill")
+                        }
                     }
                 }
-            }
-            .onChange(of: searchText, initial: false) { oldValue, newValue in
-                if !newValue.isEmpty {
-                    filterExpenses(newValue)
-                } else {
-                    groupedExpenses = originalgroupedExpenses
+                .onReceive(NotificationCenter.default.publisher(for: .NSManagedObjectContextObjectsDidChange)) { _ in
+                    // Update the view when the context changes (e.g., when expenses are modified)
+                    createGroupedExpenses(allExpenses)
                 }
-            }
-            .onChange(of: allExpenses, initial: true) { oldValue, newValue in
-                if newValue.count > oldValue.count || groupedExpenses.isEmpty {
-                    createGroupedExpenses(newValue)
+                .onChange(of: searchText, initial: false) { oldValue, newValue in
+                    if !newValue.isEmpty {
+                        filterExpenses(newValue)
+                    } else {
+                        groupedExpenses = originalgroupedExpenses
+                    }
                 }
-            }
-            .sheet(isPresented: $addExpense) { AddView() }
-            .sheet(item: $expenseToEdit) { expense in
-                UpdateExpenses(expense: expense)
+                .onChange(of: allExpenses, initial: true) { oldValue, newValue in
+                    if newValue.count > oldValue.count || groupedExpenses.isEmpty {
+                        createGroupedExpenses(newValue)
+                    }
+                }
+                .sheet(isPresented: $addExpense) { AddView() }
+                .sheet(item: $expenseToEdit) { expense in
+                    UpdateExpenses(expense: expense)
+                }
             }
         }
-    }
+
 
     func filterExpenses(_ text: String) {
         Task.detached(priority: .high) {
