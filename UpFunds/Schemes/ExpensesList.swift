@@ -14,7 +14,7 @@ struct ExpensesList: View {
 
     var body: some View {
         HStack {
-            VStack(alignment: .leading) {  // probar con lazyvstack
+            VStack(alignment: .leading) { 
                 Text(expense.note)
                     .foregroundStyle(.white)
                 HStack {

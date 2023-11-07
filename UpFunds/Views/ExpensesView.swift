@@ -71,7 +71,7 @@ struct ExpensesView: View {
                     }
                 }
                 .onReceive(NotificationCenter.default.publisher(for: .NSManagedObjectContextObjectsDidChange)) { _ in
-                    // Update the view when the context changes (e.g., when expenses are modified)
+                    // Updates the view when the context changes
                     createGroupedExpenses(allExpenses)
                 }
                 .onChange(of: searchText, initial: false) { oldValue, newValue in
